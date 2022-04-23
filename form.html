@@ -1,0 +1,293 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+    </head>
+    <body>
+        <div class="header">
+            <div>
+                <img class="logo" src="./images/logo.webp">
+            </div>
+        </div>
+        <div class="body">
+        <!-- part 1 -->
+        <div id="part1" class="detail-container">
+            <div class="sub-container">
+            <form action="#" class="details-form">
+                <div class="heading-medium">Personal Information</div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label medium">
+                  <input class="mdl-textfield__input" type="text" id="firstName">
+                  <label class="mdl-textfield__label label" for="firstName">First Name</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label medium">
+                    <input class="mdl-textfield__input" type="text" id="lastName">
+                    <label class="mdl-textfield__label label" for="lastName">Last Name</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield has-placeholder mdl-textfield--floating-label date-medium">
+                    <input class="mdl-textfield__input" type="date" id="dob">
+                    <label class="mdl-textfield__label label" for="dob">Dob</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mt-detail medium">
+                    <input class="mdl-textfield__input" type="number" id="contact">
+                    <label class="mdl-textfield__label label" for="contact">Contact</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label medium">
+                    <input class="mdl-textfield__input" type="text" id="country">
+                    <label class="mdl-textfield__label label" for="country">Country</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label medium">
+                    <input class="mdl-textfield__input" type="text" id="state">
+                    <label class="mdl-textfield__label label" for="state">State</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label medium">
+                    <input class="mdl-textfield__input" type="text" id="city">
+                    <label class="mdl-textfield__label label" for="city">City</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label medium">
+                    <input class="mdl-textfield__input" type="text" id="email">
+                    <label class="mdl-textfield__label label" for="email">Email</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label large">
+                    <textarea class="mdl-textfield__input" type="address" rows= "2" id="sample5"></textarea>
+                    <label class="mdl-textfield__label label" for="address">Address</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label large">
+                    <textarea class="mdl-textfield__input" type="about" id="sample5"></textarea>
+                    <label class="mdl-textfield__label label" for="about">About</label>
+                  </div>
+                  <button class="mdl-button mdl-js-button mdl-button--raised  next-button" onclick="next('part1')">NEXT</button>
+              </form>
+              </div>
+        </div>
+        <!-- part 2 a-->
+        <div id="part2" class="detail-container">
+            <div class="sub-container">
+            <form action="#" class="details-form">
+                <div class="heading-medium">Educational Information</div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label large2">
+                    <select class="mdl-textfield__input" id="qualification">
+                      <option></option>
+                      <option value="1">qualification 1</option>
+                      <option value="2">qualification 2</option>
+                      <option value="3">qualification 3</option>
+                      <option value="4">qualification 4</option>
+                    </select>
+                    <label style="color: #484848 !important;" class="mdl-textfield__label" for="qualification">Qualification</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label medium size-30 mt-detail">
+                    <input class="mdl-textfield__input" type="text" id="percentage">
+                    <label class="mdl-textfield__label label" for="percentage">Percentage</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield has-placeholder mdl-textfield--floating-label date-medium size-20">
+                    <input class="mdl-textfield__input" type="date" id="sessionStart">
+                    <label class="mdl-textfield__label label" for="sessionStart">Session Start</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield has-placeholder mdl-textfield--floating-label date-medium size-20">
+                    <input class="mdl-textfield__input" type="date" id="sessionEnd">
+                    <label class="mdl-textfield__label label" for="sessionEnd">Session End</label>
+                  </div>
+                  <button class="mdl-button mdl-js-button mdl-button--raised upload-button">Upload</button>
+                  <table class="mdl-data-table table-responsive mdl-js-data-table mdl-shadow--2dp data-table">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Education</th>
+                        <th class="mdl-data-table__cell--non-numeric"><div class="session">Session</div></th>
+                        <th class="mdl-data-table__cell--non-numeric">Percentage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">10 th</td>
+                        <td class="mdl-data-table__cell--non-numeric">2014 - 2015</td>
+                        <td class="mdl-data-table__cell--non-numeric"><div class="percentage">90%</div></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">12th</td>
+                        <td class="mdl-data-table__cell--non-numeric">2017 - 2018</td>
+                        <td class="mdl-data-table__cell--non-numeric"><div class="percentage">94%</div></td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">BCA</td>
+                        <td class="mdl-data-table__cell--non-numeric">2018 - 2021</td>
+                        <td class="mdl-data-table__cell--non-numeric"><div class="percentage">89%</div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="mdl-button mdl-js-button mdl-button--raised next-button" onclick="next('part2')">Next</button>
+              </form>
+              </div>
+        </div>
+        <!-- part 3 -->
+        <div id="part3" class="detail-container">
+            <div class="sub-container">
+            <form action="#" class="details-form">
+                <div class="heading-medium">Experience</div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label large">
+                    <input class="mdl-textfield__input" type="text" id="title">
+                    <label class="mdl-textfield__label label" for="title">Title</label>
+                  </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label large2">
+                    <input class="mdl-textfield__input" type="text" id="companyName">
+                    <label class="mdl-textfield__label" style="color: #484848 !important;" for="companyName">Company Name</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield has-placeholder mdl-textfield--floating-label date-medium">
+                    <input class="mdl-textfield__input" type="date" id="timePeriodStart">
+                    <label class="mdl-textfield__label label" for="timePeriodStart">Time Period Start</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield has-placeholder mdl-textfield--floating-label date-medium">
+                    <input class="mdl-textfield__input" type="date" id="timePeriodEnd">
+                    <label class="mdl-textfield__label label" for="timePeriodEnd">Time Period End</label>
+                  </div>
+                  <button class="mdl-button mdl-js-button mdl-button--raised upload-button">Upload</button>
+                  <table class="mdl-data-table table-responsive mdl-js-data-table mdl-shadow--2dp data-table">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Title</th>
+                        <th class="mdl-data-table__cell--non-numeric"><div class="session">Company Name</div></th>
+                        <th class="mdl-data-table__cell--non-numeric">Time Period</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Lorem epsum</td>
+                        <td class="mdl-data-table__cell--non-numeric">Amazon</td>
+                        <td class="mdl-data-table__cell--non-numeric">2017 - 2019</td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Lorem epsum</td>
+                        <td class="mdl-data-table__cell--non-numeric">Google</td>
+                        <td class="mdl-data-table__cell--non-numeric">2020 - 2021</td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Lorem epsum</td>
+                        <td class="mdl-data-table__cell--non-numeric">Microsoft</td>
+                        <td class="mdl-data-table__cell--non-numeric">2019 - 2020</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="mdl-button mdl-js-button mdl-button--raised next-button " onclick="next('part3')">Next</button>
+              </form>
+              </div>
+        </div>
+        <!-- part 4 -->
+        <div id="part4" class="detail-container">
+            <div class="sub-container">
+                <form action="#" class="details-form">
+                    <div class="heading-medium">Documents</div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label large2">
+                        <select class="mdl-textfield__input" id="documents">
+                          <option></option>
+                          <option value="1">Aadhar Card</option>
+                          <option value="2">Ration Card</option>
+                          <option value="3">Passport</option>
+                          <option value="4">Debit/Credit Card</option>
+                        </select>
+                        <label class="mdl-textfield__label dropdown-label" for="documents">Documents</label>
+                      </div>
+                      <button class="mdl-button mdl-js-button mdl-button--raised next-button">Upload</button>
+                      <table class="mdl-data-table table-responsive mdl-js-data-table mdl-shadow--2dp data-table">
+                        <thead>
+                          <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Name</th>
+                            <th class="mdl-data-table__cell--non-numeric">Document</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Aadhar Card</td>
+                            <td class="mdl-data-table__cell--non-numeric"><a href="#">https://getmdl.io/components/index.html</a></td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Ration Card</td>
+                            <td class="mdl-data-table__cell--non-numeric"><a href="#">https://getmdl.io/components/index.html</a></td>
+                          </tr>
+                          <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Passport</td>
+                            <td class="mdl-data-table__cell--non-numeric"><a href="#">https://getmdl.io/components/index.html</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button class="mdl-button mdl-js-button mdl-button--raised upload-button" onclick="next('part4')">Submit</button>
+                  </form>
+              </div>
+        </div>
+        <div class="detail-container pb-8">
+            <div id="part5" class="sub-container">
+                <div class="response-message">
+                    <div class="thankyou-img"><img src="./images/thankyou.webp"></div>
+                    Thankyou, your response has succesfully<br> submmited.
+                </div>
+        </div>
+        </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer detail-footer">
+            <div class="container">
+              <div class="row row-grid align-items-center mb-5">
+                <div class="col-lg-6">
+                  <h3 class="text-primary font-weight-light mb-2">Thank you for being with us!</h3>
+                  <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
+                </div>
+                <div class="col-lg-6 text-lg-center btn-wrapper">
+                  <a target="_blank" href="#" rel="nofollow" class="btn btn-icon-only btn-twitter rounded-circle" data-toggle="tooltip" data-original-title="Follow us">
+                    <span class="btn-inner--icon mt-icon"><i class="fab fa-twitter"></i></span>
+                  </a>
+                  <a target="_blank" href="https://www.facebook.com/Great-Future-Technology-235676317322010" rel="nofollow" class="btn-icon-only rounded-circle btn btn-facebook" data-toggle="tooltip" data-original-title="Like us">
+                    <span class="btn-inner--icon mt-icon"><i class="fab fa-facebook"></i></span>
+                  </a>
+                  <a target="_blank" href="#" rel="nofollow" class="btn btn-icon-only btn-dribbble rounded-circle" data-toggle="tooltip" data-original-title="Follow us">
+                    <span class="btn-inner--icon mt-icon"><i class="fab fa-instagram"></i></span>
+                  </a>
+                  <a target="_blank" href="https://github.com/gftpl" rel="nofollow" class="btn btn-icon-only btn-github rounded-circle" data-toggle="tooltip" data-original-title="Star on Github">
+                    <span class="btn-inner--icon mt-icon"><i class="fab fa-github"></i></span>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <div class="row align-items-center justify-content-md-between">
+                <div class="col-md-6">
+                  <div class="copyright">
+                    © 2018-2020, made with <i class="fa fa-heart"></i> by <a href="https://www.gftpl.in">GFTPL Team</a> for better web.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <ul class="nav nav-footer justify-content-end">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us at - 1234567890</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+            
+        <script>
+            list=["part1","part2","part3","part4","part5"]
+            window.onload= function (){
+                document.getElementById('part1').style="display:none"
+                document.getElementById("part2").style="display:none"
+                document.getElementById("part3").style="display:none"
+                document.getElementById("part4").style="display:none"
+                document.getElementById("part5").style="display:none"
+                document.getElementById(list[0]).style="display:initial"
+            }
+            function next(id){
+                document.getElementById('part1').style="display:none"
+                document.getElementById("part2").style="display:none"
+                document.getElementById("part3").style="display:none"
+                document.getElementById("part4").style="display:none"
+                document.getElementById("part5").style="display:none"
+                let pageno=list.indexOf(id)
+                document.getElementById(list[pageno+1]).style="display:initial"
+                if(pageno=3) setTimeout(()=>{
+                    document.getElementById(list[pageno+1]).style="display:none"
+                },3000)
+            }
+        </script>
+    </body>
+</html>
